@@ -14,7 +14,7 @@ COPY package*.json ./
 RUN npm install --production
 
 COPY --from=builder /app/dist ./dist
-
+RUN echo "Fichiers dans /app/dist :" && ls -l /app/dist
 EXPOSE 3000
 
 ENTRYPOINT ["node", "dist/main"]
