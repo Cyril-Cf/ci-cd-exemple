@@ -5,7 +5,7 @@ export class AppService {
   getHello(): string {
     const date = new Date();
 
-    let year = date.getFullYear();
+    // let year = date.getFullYear();
 
     return 'Hello World!';
   }
