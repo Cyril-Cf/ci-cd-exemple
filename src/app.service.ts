@@ -7,6 +7,6 @@ export class AppService {
 
     let year = date.getFullYear();
 
-    return 'Hello World 2!';
+    return 'Hello World!';
   }
 }
